@@ -1,0 +1,111 @@
+Language: Arabic
+Ingame_Only: "&cهذا الأمر متاح فقط في داخل اللعبة."
+No_Permission: "&c!ليس لديك الصلاحية للوصول الى هذا الأمر"
+Hyphen: "&9&m---------------------------------------------"
+Exceptions:
+  AlreadySent: "&c!لقد أرسلت طلب صداقة الى هذا الشخص بالفعل"
+  AlreadyFriend: "&c!أنت صديق مع هذا الشخص بالفعل"
+  Ignored: "&cلقد أضافك هذا الشخص الى قائمة التجاهل لديه!"
+  IsntOnYourFriends: "&c%targetDisplayName &cليس في قائمة أصدقائك!"
+  CantAddYourSelf: "&cلا يمكنك أضافة نفسك كصديق!"
+  CantRemoveYourself: "&c لا يمكنك حذف نفسك"
+  NoInvited: "&cلم يدعوك هذا الشخص لتكونون أصدقاء! جرب"
+  HasntFriend: "&cلم يدعوك هذا الشخص لتكونون أصدقاء! جرب"
+  SlotLimitReached: "&cلقد وصلت الى عدد الأصدقاء المحدود ! لأضافة المزيد من الأصدقاء يرجى حذف البعض من أصدقائك!"
+  RequestDeny: "&cThis player has disabled friend request receipt!"
+No-Joined-The-Party: "&cيجب ان تكون في بارتي لأستخدام هذا الأمر!"
+Cant-Find: "&cلا يمكن العثور على شخص بأسم '%name'"
+Friends:
+  Join: "&7%%displayName%% &eis now &aonline&e."
+  Quit: "&7%%displayName%% &eis now &coffline&e."
+  Server-Move: "&7%%displayName%% &emoved to &a%%server%%&e."
+Add:
+  Usage: "&cUsage: /friend add <أسم اللاعب>"
+  Sent: "&eلقد أرسلت طلب صداقة الى  %targetDisplayName&e!"
+  5-Minutes: "&eلديه 5 دقائق للموافقة على طلبك!"
+  Accept:
+    Prefix: "&a&l[قبول]&r"
+    Message: "&bأضغط هنا للموافقة على طلب الصداقة"
+  Deny:
+    Prefix: "&c&l[رفض]&r"
+    Message: "&bأضغط هنا لرفض طلب الصداقة"
+  Ignore:
+    Prefix: "&7&l[تجاهل]"
+    Message: "&bأضغط هنا لرفض جميع طلبات الصداقة المستقبلية."
+  Request:
+    Received: "&eطلب صداقة من %displayName&e!"
+  Expired:
+    YourSelf: "&eطلب صداقتك الى %targetDisplayName &e أنتهت مدته."
+    Target: "&eطلب الصداقة من %displayName &e أنتهت مدته."
+Remove:
+  Usage: "&cأستخدام خاطئ! /friend remove <أسم اللاعب>"
+  YourSelf: "&eلقد حذفت %targetDisplayName &eمن قائمة أصدقائك!"
+  Target: "&e%displayName &eحذفك من قائمة أصدقائه!"
+Accept:
+  Usage: "&cأستخدام خاطئ! /friend accept <أسم اللاعب>"
+  YourSelf: "&aأنت الأن صديق مع  %targetDisplayName"
+  Target: "&aأنت الأن صديق مع %displayName"
+Deny:
+  Usage: "&cأستخدام خاطئ! /friend deny <أسم اللاعب>"
+  Declined: "&eرفض %targetDisplayName&e's طلب صداقتك!"
+List:
+  DontHave:
+    One: "&eليس لديك اي صديق !"
+    Two: "&eقم بأضافة أصدقائك عن طريق /friend add <أسم اللاعب>"
+  Online: "&e%targetDisplayName &eالان في سيرفر %server Server."
+  Offline: "&e%targetDisplayName &c حالياً غير متصل "
+  Page: "&6الاصدقاء (الصفحة  %%currentPage%% من %%maxPage%%)"
+Lang:
+  Usage: "&cأستخدام خاطئ! /friend lang <language>"
+  Available: "&bاللغات المتوفرة حالياً:"
+  Update: "&aاللغة المختارة: &e%lang"
+Ignore:
+  Usage:
+    Main: "&cأستخدام خاطئ! /friend ignore <add|remove|list>"
+    Add: "&cأستخدام خاطئ! /friend ignore add <اسم اللاعب>"
+    Remove: "&cأستخدام خاطئ! /friend ignore add <اسم اللاعب>"
+  Havent:
+    One: "&ليس لديك اي تجاهل!"
+    Two: "&eتجاهل شخص عن طريق كتابة /friend ignore add <أسم اللاعب>"
+  Added: "&aأضفت %targetDisplayName &aالى قائمة التجاهل."
+  AlreadyAdded: "&cلقد قمت بالفعل بتجاهل هذا اللاعب من قبل!"
+  Removed: "&aحذفت %targetDisplayName &aمن قائمة التجاهل."
+  NotAdded: "&cلم تقم بتجاهل هذا اللاعب! &b/ignore add أسم اللاعب &c حتى تقوم بتجاهله!"
+Force-Add:
+  Usage: "&cالأستخدام: /friend force-add <أسم اللاعب>"
+  YourSelf: "&aانت الأن صديق مع %targetDisplayName &c&l[أجباراً]"
+  Target: "&aأنت الأن صديق مع %displayName &c&l[أجبارا]"
+Prefix:
+  Usage: "&cالأستخدام: /friend prefix <اسم اللأعب> <الكنية>"
+  Current: "&7%targetDisplayName&e's كنيته الأن '%prefix&e'"
+  To: "&7%targetDisplayName&e's الكنية تغيرت الان الى '%prefix&e'"
+Toggle:
+  Enabled: "&eThe friend request receipt is now &aenabled&e."
+  Disabled: "&eThe friend request receipt is now &cdisabled&e."
+ResetPrefix:
+  Usage: "&cالأستخدام: /friend reset-prefix <الكنية>"
+  Default: "الافتراضي"
+  To: "&7%targetDisplayName&e's الكنية تغيرت الان الى '%prefix&e'"
+Help:
+  Command: "&a أوامر الأصدقاء:"
+  Help: "&e/friend help &7- &bأكتب الأمر هذا لأظهار أوامر المساعدة"
+  Lang: "&e/friend lang &7- &bتغيير اللغة"
+  Add: "&e/friend add &7- &bأضافة اللاعب كصديق"
+  Remove: "&e/friend remove &7- &bحذف اللاعب من قائمة أصدقائك"
+  Accept: "&e/friend accept &7- &bالموافقة على طلب الصداقة"
+  Deny: "&e/friend deny &7- &bرفض طلب الصداقة"
+  List: "&e/friend list &7- &bقائمة أصدقائك"
+  Ignore: "&e/friend ignore &7- &bالتحكم بقائمة التجاهل"
+  Force-Add: "&e/friend force-add &7- &bستكون صديق مع هذا الشخص ( أجباراً)."
+  Prefix: "&e/friend prefix &7- &bأضافة كنية لصديقك."
+  Toggle: "&e/friend toggle &7- &bTo toggle the friend request receipt."
+  ResetPrefix: "&e/friend reset-prefix &7- &bTo reset a player's prefix to their NeonMC rank."
+Tell-Command:
+  Usage: "&cالأستخدام: /tell <أسم اللاعب> <رسالتك>"
+  YourSelf: "&d الى : %targetDisplayName&7: %message"
+  Target: "&d من : %displayName&7: %message"
+  MustBeFriends: "&cيجب ان تكون صديق مع  %targetDisplayName!"
+  Offline: "&c%targetDisplayName &cليس متصل!"
+Reply-Command:
+  Usage: "&cأستخدام خاطئ! /reply <رسالتك>"
+  Target: "&c رد الى : %targetDisplayName"

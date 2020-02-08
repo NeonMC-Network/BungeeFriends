@@ -1,0 +1,90 @@
+package net.simplyrin.bungeefriends.commands;
+
+import net.md_5.bungee.api.CommandSender;
+import net.md_5.bungee.api.connection.ProxiedPlayer;
+import net.md_5.bungee.api.plugin.Command;
+import net.simplyrin.bungeefriends.Main;
+import net.simplyrin.bungeefriends.messages.Messages;
+import net.simplyrin.bungeefriends.utils.FriendManager.FriendUtils;
+import net.simplyrin.bungeefriends.utils.LanguageManager.LanguageUtils;
+
+import java.util.UUID;
+
+/**
+ * Created by SimplyRin on 2018/09/14.
+ * <p>
+ * Copyright (c) 2018 SimplyRin
+ * <p>
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * <p>
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * <p>
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+public class ReplyCommand extends Command {
+
+	private Main plugin;
+
+	public ReplyCommand(Main plugin, String command) {
+		super(command);
+		this.plugin = plugin;
+	}
+
+	@Override
+	public void execute(CommandSender sender, String[] args) {
+		if (!(sender instanceof ProxiedPlayer)) {
+			this.plugin.info(Messages.INGAME_ONLY);
+			return;
+		}
+
+		ProxiedPlayer player = (ProxiedPlayer) sender;
+		FriendUtils myFriends = this.plugin.getFriendManager().getPlayer(player);
+		LanguageUtils langUtils = this.plugin.getLanguageManager().getPlayer(player);
+
+		UUID targetUniqueId = this.plugin.getReplyTargetMap().get(myFriends.getUniqueId());
+
+		if (args.length > 0) {
+			FriendUtils targetFriends = this.plugin.getFriendManager().getPlayer(targetUniqueId);
+			LanguageUtils targetLangUtils = this.plugin.getLanguageManager().getPlayer(targetUniqueId);
+
+			if (targetFriends.getPlayer() == null) {
+				this.plugin.info(player, langUtils.getString(Messages.HYPHEN));
+				this.plugin.info(player, langUtils.getString("Tell-Command.Offline").replace("%targetDisplayName", targetFriends.getDisplayName()));
+				this.plugin.info(player, langUtils.getString(Messages.HYPHEN));
+				return;
+			}
+
+			StringBuilder message = new StringBuilder();
+			for (String arg : args) {
+				message.append(arg).append(" ");
+			}
+
+			this.plugin.info(player, langUtils.getString("Tell-Command.YourSelf").replace("%targetDisplayName", targetFriends.getDisplayName()).replace("%message", message.toString()));
+			this.plugin.info(targetFriends.getPlayer(), targetLangUtils.getString("Tell-Command.Target").replace("%displayName", myFriends.getDisplayName()).replace("%message", message.toString()));
+
+			this.plugin.getReplyTargetMap().put(targetFriends.getUniqueId(), player.getUniqueId());
+			return;
+		}
+
+		this.plugin.info(player, langUtils.getString("Reply-Command.Usage"));
+		if (targetUniqueId != null) {
+			FriendUtils targetFriends = this.plugin.getFriendManager().getPlayer(targetUniqueId);
+			this.plugin.info(player, langUtils.getString("Reply-Command.Target").replace("%targetDisplayName", targetFriends.getDisplayName()));
+		} else {
+			this.plugin.info(player, langUtils.getString("Reply-Command.Target").replace("%targetDisplayName", "&cNone!"));
+		}
+	}
+
+}

@@ -1,0 +1,111 @@
+Language: Romanian
+Ingame_Only: "&fAceasta comandă este disponibilă numai în joc."
+No_Permission: "&fNu ai acces la aceasta comanda!"
+Hyphen: "&a&m---------------------------------------------"
+Exceptions:
+  AlreadySent: "&fAi trimis deja o cerere de prietenie utilizatorului!"
+  AlreadyFriend: "Ești deja un prieten al acestei persoane!"
+  Ignored: "&cAcest jucător a fost adăugat la lista de ignorat jucătorii!"
+  IsntOnYourFriends: "&a%targetDisplayName Nu este in lista ta de prieteni!"
+  CantAddYourSelf: "Nu te poți adăuga pe tine însuți ca prieten!"
+  CantRemoveYourself: "&fNu te poti sterge singur de la prieteni!"
+  NoInvited: "&fAceasta persoană nu te-a invitat sa fiti prieteni!"
+  HasntFriend: "&fAceasta persoană nu te-a invitat sa fiti prieteni!"
+  SlotLimitReached: "&f Ai atins maximul de prieteni! Pentru a adăuga mai multi prietenii vă rugăm să eliminaţi mai intai pe cineva!"
+  RequestDeny: "&fAcest &ajucator &fa dezactivat cererile de prietenie!"
+No-Joined-The-Party: "&fTrebuie să fii intr-un party pentru a folosi această comandă!"
+Cant-Find: "&fNu sa putut găsi un jucător cu numele de %name"
+Friends:
+  Join: "&7%%displayname%% &eA intrat."
+  Quit: "&7%%displayName%% &eA iesit."
+  Server-Move: "&7%%displayName%% &emoved to &a%%server%%&e."
+Add:
+  Usage: "&fFoloseste /friend add <player>"
+  Sent: "&fAi trimis o cerere de prietenie catre &a%targetDisplayName!"
+  5-Minutes: "&fAre timp 5 minute să-ti accepte cererea de prietenie!"
+  Accept:
+    Prefix: "&a&l[ACCEPTA]&r"
+    Message: "&fClick pentru a accepta cererea de prietenie"
+  Deny:
+    Prefix: "&c&l[RESPINGE]&r"
+    Message: "&fClick pentru a refuza solicitarea de prieten"
+  Ignore:
+    Prefix: "&4&ll[IGNORA]&r"
+    Message: "&fClick pentru a &4 bloca&f toate &4cereri &furmatoare."
+  Request:
+    Received: "Cerere de prietenie de la %displayName &e!"
+  Expired:
+    YourSelf: "Cererea de prietenie de la %targetDisplayName &fa expirat."
+    Target: "Cererea de prietenie de la %displayName &fa expirat."
+Remove:
+  Usage: "&fFoloseste /friend add <player>"
+  YourSelf: "&L-ai eliminat pe %targetDisplayName &f din lista ta de prieteni!"
+  Target: "&a%displayName &f te-a eliminat din lista sa de prieteni!"
+Accept:
+  Usage: "&fFoloseste /friend accept <player>"
+  YourSelf: "&aTu esti de acum prieteni cu %targetDisplayName"
+  Target: "&aDe acum tu si &4 %displayName sunteti prieteni"
+Deny:
+  Usage: "&fFoloseste /friend deny <jucator>"
+  Declined: "&fCererea de prietenie a lui %targetDisplayName &fa fost respinsa!"
+List:
+  DontHave:
+    One: "Deocamdată, nu ai niciun prieten!"
+    Two: "&fAdauga niste prieteni cu /friend add <player>"
+  Online: "&e%targetDisplayName Este pe sectiunea &a%server."
+  Offline: "&e%targetDisplayName &cEste momentan offline"
+  Page: "&aPrieteni &f(Pagina &a%%currentPage%% &fdin &a%%maxPage%%)"
+Lang:
+  Usage: "&fFolosinta incorecta &a/friend lang <limba>"
+  Available: "&fLimbi disponibile:"
+  Update: "&aLimba selectata &a%lang"
+Ignore:
+  Usage:
+    Main: "&fFolosinta incorecta /friend ignore <add|remove|list>"
+    Add: "&fFolosinta incorecta /friend ignore add <player>"
+    Remove: "&fFolosinta incorecta /friend ignore add <player>"
+  Havent:
+    One: "Deocamdată, nu ai nici o ignorare!"
+    Two: "&fAdauga niste persoane pe care vrei sa le ignori cu /friend ignore add <player>"
+  Added: "%targetDisplayName A fost adaugat in lista ta cu persoane ignorate."
+  AlreadyAdded: "&fAceasta persoana este deja in lista ta cu persoane ignorate!"
+  Removed: "%targetDisplayName A fost scos din lista ta cu persoane ignorate."
+  NotAdded: "&fAceasta persoana nu este in lista ta cu persoane ignorate!"
+Force-Add:
+  Usage: "&fFoloseste /friend force-add <player>"
+  YourSelf: "Esti prieten cu %targetDisplayName% FOrtat"
+  Target: "Esti prieten cu %DdisplayName% FOrtat"
+Prefix:
+  Usage: "Foloseste /friend prefix <player> <prefix>"
+  Current: "&7%targetDisplayName&e's currently prefix is '%prefix&e'."
+  To: "&7%targetDisplayName&e's prefix has been changed to '%prefix&e'."
+Toggle:
+  Enabled: "&fDe acum &apoti primii oricand cereri de prietenie"
+  Disabled: "&fDe acum &4nu mai poti primii oricand cereri de prietenie"
+ResetPrefix:
+  Usage: "Foloseste /friend reset-prefix <player>"
+  Default: "default"
+  To: "&7%targetDisplayName&e's prefix has been changed to '%prefix&e'."
+Help:
+  Command: "&aComenzi pentru prieteni:"
+  Help: "&e/friend help &8- &aPrimesti aceste informatii"
+  Lang: "&e/friend lang &8- &aSchimbi limba la /friend"
+  Add: "&e/friend add &8- &aAdauga un jucator la lista ta"
+  Remove: "&e/friend remove &8- &aScoate un prieten din lista da"
+  Accept: "&e/friend accept &8- &aAccepta o cerere de prietenie"
+  Deny: "&e/friend deny &8- &aRespinge o cerere de prietenie"
+  List: "&e/friend list 8- &aO lista cu prieteni tai"
+  Ignore: "&e/friend ignore &8- &aLista ta cu persoanele ignorate"
+  Force-Add: "&eTine-ti minte acest sistem este conectat cu cel de &a/party &e:)"
+  Prefix: "&e/friend prefix &8- &aSeteaza-i unui jucator prefixul."
+  Toggle: "&e/friend toggle &8- &cActivarea/Dezactivarea cererilor de prietenie."
+  ResetPrefix: "&e/friend reset-prefix &7- &bTo reset a player's prefix to their NeonMC rank."
+Tell-Command:
+  Usage: "Foloseste /tell <player> <message>"
+  YourSelf: "Catre %targetDisplayName&7: %message"
+  Target: "De la %displayName&7: %message"
+  MustBeFriends: "Trebuie sa fii prieten cu %targetDisplayName!"
+  Offline: "&c%targetDisplayName Nu este online!"
+Reply-Command:
+  Usage: "Foloseste /reply <mesaj>"
+  Target: "Reply-ul a fost trimis catre %targetDisplayName"

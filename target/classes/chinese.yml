@@ -1,0 +1,111 @@
+Language: Chinese
+Ingame_Only: "&c该指令仅在游戏中可用！"
+No_Permission: "&c你没有权限使用该指令！"
+Hyphen: "&9&m---------------------------------------------"
+Exceptions:
+  AlreadySent: "&c你已经向这位玩家送出了好友请求！"
+  AlreadyFriend: "&c你与这位玩家已经成为好友！"
+  Ignored: "&c那位玩家已将你置入他们的屏蔽列表中！"
+  IsntOnYourFriends: "&c%targetDisplayName &c不在你的好友列表中！"
+  CantAddYourSelf: "&c你不能添加自己为好友！"
+  CantRemoveYourself: "&c你不能移除自己！"
+  NoInvited: "&c那位玩家没有向你发送好友请求！"
+  HasntFriend: "&c那位玩家没有向你发送好友请求！"
+  SlotLimitReached: "&c好友数量已达上限！ 请先删除一些再继续添加！"
+  RequestDeny: "&c这位玩家关闭了好友请求接收功能！"
+No-Joined-The-Party: "&c你必须在组队中才能使用该指令！"
+Cant-Find: "&c无法找到名为 ‘%name’ &c的玩家！"
+Friends:
+  Join: "&7%%displayName%% &a已上线。"
+  Quit: "&7%%displayName%% &c已离线。"
+  Server-Move: "&7%%displayName%% &e移动到了 &a%%server%%&e。"
+Add:
+  Usage: "&c用法： /friend add <玩家>"
+  Sent: "&e你向 %targetDisplayName &e发出了好友请求！"
+  5-Minutes: "&e他们有5分钟接受请求！"
+  Accept:
+    Prefix: "&a&l[接受]&r"
+    Message: "&b点击接受好友请求"
+  Deny:
+    Prefix: "&c&l[拒绝]&r"
+    Message: "&b点击拒绝好友请求"
+  Ignore:
+    Prefix: "&7&l[忽略]&r"
+    Message: "&b点击屏蔽该玩家"
+  Request:
+    Received: "&e来自 %displayName &e的好友请求！"
+  Expired:
+    YourSelf: "&e向 %targetDisplayName &e发出的好友请求已失效。"
+    Target: "&e来自 %displayName &e的好友请求已失效。"
+Remove:
+  Usage: "&c用法： /friend remove <玩家>"
+  YourSelf: "&e你从好友列表中移除了 %targetDisplayName&e！"
+  Target: "&e%displayName &e从他们的好友列表中移除了你！"
+Accept:
+  Usage: "&c用法： /friend accept <玩家>"
+  YourSelf: "&a你现在与 %targetDisplayName &a成为了好友。"
+  Target: "&a你现在与 %displayName &a成为了好友。"
+Deny:
+  Usage: "&c用法： /friend deny <玩家>"
+  Declined: "&e你拒绝了 %targetDisplayName &e的好友请求！"
+List:
+  DontHave:
+    One: "&e你还没有任何好友！"
+    Two: "&e使用 /friend add <玩家> 添加一些好友。"
+  Online: "&e%targetDisplayName &e目前在 %server 中。"
+  Offline: "&e%targetDisplayName &c当前离线。"
+  Page: "&6好友 (%%currentPage%% / %%maxPage%%)"
+Lang:
+  Usage: "&c用法： /friend lang <语言>"
+  Available: "&b可用语言："
+  Update: "&a当前语言： &e%lang"
+Ignore:
+  Usage:
+    Main: "&c用法： /friend ignore <add|remove|list>"
+    Add: "&c用法： /friend ignore add <玩家>"
+    Remove: "&c用法： /friend ignore add <玩家>"
+  Havent:
+    One: "&e你还没有屏蔽任何玩家！"
+    Two: "&e使用 /ignore add <玩家> 屏蔽玩家。"
+  Added: "&a已将 %targetDisplayName &a加入到你的屏蔽列表。"
+  AlreadyAdded: "&c你已经屏蔽那位玩家了！"
+  Removed: "&a已将 %targetDisplayName &a从你的屏蔽列表移除。"
+  NotAdded: "&c你没有屏蔽那位玩家！"
+Force-Add:
+  Usage: "&c用法: /friend force-add <玩家>"
+  YourSelf: "&a你现在与 %targetDisplayName &a成为了好友！ &c&l[强制添加]"
+  Target: "&a你现在与 %targetDisplayName &a成为了好友！ &c&l[强制添加]"
+Prefix:
+  Usage: "&c用法： /friend prefix <玩家> <前缀>"
+  Current: "&7%targetDisplayName &e目前的前缀是 ‘%prefix&e’。"
+  To: "&7%targetDisplayName &e的前缀已被更改为 ‘%prefix&e’。"
+Toggle:
+  Enabled: "&e你&a开启&e了好友请求接收功能。"
+  Disabled: "&e你&c关闭&e了好友请求接收功能。"
+ResetPrefix:
+  Usage: "&c用法： /friend reset-prefix <玩家>"
+  Default: "默认"
+  To: "&7%targetDisplayName &e的前缀已被更改为 ‘%prefix&e’。"
+Help:
+  Command: "&a好友指令："
+  Help: "&e/friend help &7- &b显示此帮助。"
+  Lang: "&e/friend lang <语言> &7- &b更改显示语言。"
+  Add: "&e/friend add <玩家> &7- &b添加玩家为好友。"
+  Remove: "&e/friend remove <玩家> &7- &b从好友列表中移除玩家。"
+  Accept: "&e/friend accept <玩家> &7- &b接受好友请求。"
+  Deny: "&e/friend deny <玩家> &7- &b拒绝好友请求。"
+  List: "&e/friend list &7- &b列出你的好友。"
+  Ignore: "&e/friend ignore <add|remove|list> &7- &b管理屏蔽列表。"
+  Force-Add: "&e/friend force-add <玩家> &7- &b强制添加玩家为好友。"
+  Prefix: "&e/friend prefix <玩家> <前缀> &7- &b设置玩家的前缀。"
+  Toggle: "&e/friend toggle &7- &b切换好友请求接收状态。"
+  ResetPrefix: "&e/friend reset-prefix <玩家> &7- &b重置玩家的前缀为他们的 NeonMC 等级。"
+Tell-Command:
+  Usage: "&c用法： /tell <玩家> <消息>"
+  YourSelf: "&d发至： %targetDisplayName&7: %message"
+  Target: "&d来自： %displayName&7: %message"
+  MustBeFriends: "&c你必须先与 %targetDisplayName &c成为好友！"
+  Offline: "&c%targetDisplayName &c当前离线！"
+Reply-Command:
+  Usage: "&c用法： /reply <消息>"
+  Target: "&c回复目标： %targetDisplayName"

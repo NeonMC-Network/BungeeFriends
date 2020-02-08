@@ -1,0 +1,111 @@
+Language: Japanese
+Ingame_Only: "&cこのコマンドはゲーム内からのみ使用できます。"
+No_Permission: "&cあなたはこのコマンドにアクセスする権利がありません。"
+Hyphen: "&9&m---------------------------------------------"
+Exceptions:
+  AlreadySent: "&cあなたは既にプレイヤーにリクエストを送っています！"
+  AlreadyFriend: "&cあなたはすでにこのプレイヤーとフレンドです！"
+  Ignored: "&cこのプレイヤーは無視リストにあなたを追加しています！"
+  IsntOnYourFriends: "&c%targetDisplayName &cはあなたとフレンドではありません！"
+  CantAddYourSelf: "&cあなたは自身をフレンドとして追加することはできません！"
+  CantRemoveYourself: "&cあなたは自身をフレンド削除することはできません！"
+  NoInvited: "&cこのプレイヤーはあなたにフレンド申請をしていません！"
+  HasntFriend: "&cこの人はあなたをフレンドに申請していません！"
+  SlotLimitReached: "&cあなたは最大の友達に達しました！ もっと友達を追加するには、いくつかを削除してください！"
+  RequestDeny: "&cThis player has disabled friend request receipt!"
+No-Joined-The-Party: "&cこのコマンドを使用するには、パーティーに参加している必要があります！"
+Cant-Find: "&c'%name' の名前でプレイヤーを見つけることができませんでした。"
+Friends:
+  Join: "&7%%displayName%% &aが参加しました。"
+  Quit: "&7%%displayName%% &cが退出しました。"
+  Server-Move: "&7%%displayName%% &eが &a%%server%% &eに移動しました。"
+Add:
+  Usage: "&c使用方法: /friend add <プレイヤー>"
+  Sent: "&eあなたは %targetDisplayName &eにフレンド申請を送信しました！"
+  5-Minutes: "&eプレイヤーは5分間招待を受け入れることができます！"
+  Accept:
+    Prefix: "&a&l[許可]&r"
+    Message: "&bクリックしてフレンドリクエストを受け入れます"
+  Deny:
+    Prefix: "&c&l[拒否]&r"
+    Message: "&bフレンドリクエストを拒否するにはクリックしてください"
+  Ignore:
+    Prefix: "&7&l[無視]&r"
+    Message: "&bクリックするとこれからのフレンドリクエストをブロックします"
+  Request:
+    Received: "&e%displayName &eからフレンドリクエストを受信しました！"
+  Expired:
+    YourSelf: "&e%targetDisplayName &eへのフレンドリクエストの有効期限が切れました。"
+    Target: "&e%displayName &eからのフレンドリクエストの有効期限が切れました。"
+Remove:
+  Usage: "&c使用方法: /friend remove <プレイヤー>"
+  YourSelf: "&eあなたは %targetDisplayName &eを フレンドリスト から削除しました。"
+  Target: "&e%displayName &eはあなたを フレンドリスト から削除しました。"
+Accept:
+  Usage: "&c使用方法: /friend accept <プレイヤー>"
+  YourSelf: "&aあなたは %targetDisplayName &aとフレンドになりました。"
+  Target: "&aあなたは %displayName &aとフレンドになりました。"
+Deny:
+  Usage: "&c使用方法: /friend deny <プレイヤー>"
+  Declined: "&e%targetDisplayName &eさんからのフレンドリクエストを拒否しました。"
+List:
+  DontHave:
+    One: "&eあなたはまだ誰ともフレンドになっていません！"
+    Two: "&e/friend add <プレイヤー> を使用してフレンド申請を送信することができます。"
+  Online: "&e%targetDisplayName &eは現在 %server サーバーにいます。"
+  Offline: "&e%targetDisplayName &cは現在オフラインです。"
+  Page: "&6フレンド (%%currentPage%% / %%maxPage%%)"
+Lang:
+  Usage: "&c使用方法: /friend lang <言語>"
+  Available: "&b現在利用可能な言語:"
+  Update: "&a選択した言語: &e%lang"
+Ignore:
+  Usage:
+    Main: "&c使用方法: /friend ignore <add|remove|list>"
+    Add: "&c使用方法: /friend ignore add <player>"
+    Remove: "&c使用方法: /friend ignore add <player>"
+  Havent:
+    One: "&eあなたはまだ誰も無視していません！"
+    Two: "&e/friend ignore add <プレイヤー> を使用して無視リストに追加することができます。"
+  Added: "&aあなたの無視リストに %targetDisplayName を追加しました。"
+  AlreadyAdded: "&cあなたはすでにそのプレイヤーを無視しました！"
+  Removed: "&aあなたの無視リストから %targetDisplayName を削除しました。"
+  NotAdded: "&cあなたはそのプレイヤーを無視していません！"
+Force-Add:
+  Usage: "&c使用方法: /friend force-add <プレイヤー>"
+  YourSelf: "&aあなたは %targetDisplayName とフレンドになりました！ &c&l[強制]"
+  Target: "&aあなたは %displayName とフレンドになりました！ &c&l[強制]"
+Prefix:
+  Usage: "&c使用方法: /friend prefix <プレイヤー> <プレフィックス>"
+  Current: "&7%targetDisplayName&e さんの現在のプレフィックスは '%prefix&e' です。"
+  To: "&7%targetDisplayName&e さんのプレフィックスを '%prefix&e' に変更しました。"
+Toggle:
+  Enabled: "&eThe friend request receipt is now &aenabled&e."
+  Disabled: "&eThe friend request receipt is now &cdisabled&e."
+ResetPrefix:
+  Usage: "&c使用方法: /friend reset-prefix <プレイヤー>"
+  Default: "デフォルト"
+  To: "&7%targetDisplayName&e さんのプレフィックスを '%prefix&e' に変更しました。"
+Help:
+  Command: "&aフレンドコマンド:"
+  Help: "&e/friend help &7- &bこのヘルプメッセージを表示します。"
+  Lang: "&e/friend lang &7- &b表示される言語を変更する。"
+  Add: "&e/friend add &7- &bプレーヤーをフレンドとして追加する。"
+  Remove: "&e/friend remove &7- &bフレンドからプレイヤーを削除する。"
+  Accept: "&e/friend accept &7- &bフレンドリクエストを承諾する。"
+  Deny: "&e/friend deny &7- &bフレンドのリクエストを拒否する。"
+  List: "&e/friend list &7- &bフレンドリストを見る。"
+  Ignore: "&e/friend ignore &7- &bTo manage your ignoring list。"
+  Force-Add: "&e/friend force-add &7- &bプレイヤーと強制的にフレンドになります。"
+  Prefix: "&e/friend prefix &7- &bプレーヤープレフィックスを設定する。"
+  Toggle: "&e/friend toggle &7- &bフレンドリクエスト受信の切り替え。"
+  ResetPrefix: "&e/friend reset-prefix &7- &bTo reset a player's prefix to their NeonMC rank."
+Tell-Command:
+  Usage: "&c使用方法: /tell <プレイヤー> <メッセージ>"
+  YourSelf: "&dTo: %targetDisplayName&7: %message"
+  Target: "&dFrom: %displayName&7: %message"
+  MustBeFriends: "&c%targetDisplayName とフレンドになっている必要があります！"
+  Offline: "&c%targetDisplayName &cは現在オフラインです！"
+Reply-Command:
+  Usage: "&c使用方法: /reply <メッセージ>"
+  Target: "&c返信相手: %targetDisplayName"

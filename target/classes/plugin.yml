@@ -1,0 +1,5 @@
+main: net.simplyrin.bungeefriends.Main
+name: BungeeFriends
+version: 1.6.1
+author: SimplyRin
+depend: [BungeeParties]

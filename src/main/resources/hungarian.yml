@@ -1,0 +1,111 @@
+Language: Hungarian
+Ingame_Only: "&cEzt a parancsot csak játékban használhatod."
+No_Permission: "&cNincs jogod ehhez a parancshoz!"
+Hyphen: "&9&m---------------------------------------------"
+Exceptions:
+  AlreadySent: "&cMár elküldted a barát felkérést az adott játékosnak!"
+  AlreadyFriend: "&cMár barátod az adott játékos!"
+  Ignored: "&cEz a játékos hozzá lett adva a blokkolt játékosok közé!"
+  IsntOnYourFriends: "&c%targetDisplayName &cnincs a barátaid közt!"
+  CantAddYourSelf: "&cNem addhatod hozzá saját magadat a barát listádhoz!"
+  CantRemoveYourself: "&cNem tudod törölni saját magadat!"
+  NoInvited: "&cEnnek a játékosnak nem lett elküldve egy barát felkérés se! Próbáld a &e/friend add %name &cparanccsal"
+  HasntFriend: "&cEnnek a játékosnak nem lett elküldve egy barát felkérés se! Próbáld a &e/friend add %name &cparanccsal"
+  SlotLimitReached: "&cElérted a maximum barátaid számát! Kérlek törölkj egy pár barátot!"
+  RequestDeny: "&cEz a játékos kikapcsolta a barát felkéréseket!"
+No-Joined-The-Party: "&cPartyban kell lenned hogy használd ezt a parancsot!"
+Cant-Find: "&cnem található ez a játékosnév: '%name'"
+Friends:
+  Join: "&7%%displayName%% &ecsatlakozott."
+  Quit: "&7%%displayName%% &ekilépett."
+  Server-Move: "&7%%displayName%% &emoved to &a%%server%%&e."
+Add:
+  Usage: "&cHasználat: /friend add <player>"
+  Sent: "&eKüldtél egy barát felkérést neki: %targetDisplayName&e!"
+  5-Minutes: "&e5 percük van hogy elfogadják!"
+  Accept:
+    Prefix: "&a&l[ELFOGADÁS]&r"
+    Message: "&bKatt ide hogy elfogadd a felkérést"
+  Deny:
+    Prefix: "&c&l[ELUTASÍTÁS]&r"
+    Message: "&bKatt ide hogy elutasítsd a felkérést"
+  Ignore:
+    Prefix: "&7&l[BLOKKOLÁS]&r"
+    Message: "&bKatt ide hogy blokkold a felkérést."
+  Request:
+    Received: "&eBarát felkérés tőle: %displayName&e!"
+  Expired:
+    YourSelf: "&eA barátfelkérésed amit %targetDisplayName-nak/nek küldtél lejárt."
+    Target: "&e%displayName &7barátfelkérése lejárt."
+Remove:
+  Usage: "&cHasználat: /friend remove <player>"
+  YourSelf: "&eTörölted %targetDisplayName-t &ea barátlistádról!"
+  Target: "&e%displayName &etötölve lett a barátlistádról!"
+Accept:
+  Usage: "&cHasználat: /friend accept <player>"
+  YourSelf: "&aMostmár a barátod %targetDisplayName"
+  Target: "&aMostmár a barátod %displayName"
+Deny:
+  Usage: "&cHasználat: /friend deny <player>"
+  Declined: "&eElutasítottad %targetDisplayName &ebarát felkérését!"
+List:
+  DontHave:
+    One: "&eMég egy barátod sincsen!"
+    Two: "&eAdj hozzá a barát listádho egy barátot a /friend add <player> parancsal"
+  Online: "&e%targetDisplayName &ea %server &eszerveren van."
+  Offline: "&e%targetDisplayName &cjelenleg nem elérhető"
+  Page: "&6Barátok (%%currentPage%%/%%maxPage%%. oldal)"
+Lang:
+  Usage: "&cHelytelen használat! '/party lang <language>'"
+  Available: "&bjelenlegi nyelv:"
+  Update: "&aKiválasztottad ezt a nyelvet: &e%lang&a!"
+Ignore:
+  Usage:
+    Main: "&chelytelen használat! '/friend ignore <add|remove|list>'"
+    Add: "&cHelytelen használat! '/friend ignore add <player>'"
+    Remove: "&cHelytelen használat! '/friend ignore add <player>'"
+  Havent:
+    One: "&eMég nincsen blokkolt játékosod!"
+    Two: "&eHozzáadhatsz néhányat a /friend ignore add <player> parancsal "
+  Added: "&aHozzá lett adva %targetDisplayName &aa blokkolt játékosok közé."
+  AlreadyAdded: "&cMár blokkoltad ezt a játékost! Használd a &b/ignore remove Player &cparancsot hogy felold!"
+  Removed: "&aTörölted %targetDisplayName-t &aa blokkolt játékosok közül."
+  NotAdded: "&cNem blokkoltad ezt a játékost! Használd a &b/ignore add Player &cparancsot hogy blokkold!"
+Force-Add:
+  Usage: "&cHasználat: /friend force-add <player>"
+  YourSelf: "&aA barátod mostantól: %taisplayName &c&l[KÉNYSZERÍTVE]"
+  Target: "&aA barátod mostantól: %displayName &c&l[KÉNYSZERÍTVE]"
+Prefix:
+  Usage: "&cHasználat: /friend prefix <player> <prefix>"
+  Current: "&7%targetDisplayName&e jelenlegi prefixe: '%prefix&e'"
+  To: "&7%targetDisplayName&e prefix kicserélve erre: '%prefix&e'"
+Toggle:
+  Enabled: "&eBarát Felkérés: &aBekapcsolva"
+  Disabled: "&eBarát Felkérés: &cKikapcsolva"
+ResetPrefix:
+  Usage: "&cUsage: /friend reset-prefix <player>"
+  Default: "default"
+  To: "&7%targetDisplayName&e's prefix has been changed to '%prefix&e'."
+Help:
+  Command: "&eBarát parancsok:"
+  Help: "&e/friend help &7- &bElőhozza ezt a menüt"
+  Lang: "&e/friend lang &7- &bNyelvet vált"
+  Add: "&e/friend add &7- &bHozzáadd egy barátot"
+  Remove: "&e/friend remove &7- &bTöröl egy barátot"
+  Accept: "&e/friend accept &7- &bElfogadta a barátfelkérést"
+  Deny: "&e/friend deny &7- &bElutasítja a felkérést"
+  List: "&e/friend list &7- &bKilistázza a barátokat"
+  Ignore: "&e/friend ignore &7- &bKilistázza a blokkolt barátokat"
+  Force-Add: "&e/friend force-add &7- &bHozzáadd egy barátot egy másik játékoshoz."
+  Prefix: "&e/friend prefix &7- &bBeállít egy prefixet."
+  Toggle: "&e/friend toggle &7- &bKi vagy bekapcsolja a barát felkéréseket."
+  ResetPrefix: "&e/friend reset-prefix <player> &7- &bTo reset a player's prefix to their rank."
+Tell-Command:
+  Usage: "&cHasználat: /tell <player> <message>"
+  YourSelf: "&dNeki: %targetDisplayName&7: %message"
+  Target: "&dTőle: %displayName&7: %message"
+  MustBeFriends: "&cA barátod kell legyen ő: %targetDisplayName!"
+  Offline: "&c%targetDisplayName &cnem elérhető!"
+Reply-Command:
+  Usage: "&chasználat: /reply <message>"
+  Target: "&cVálaszcél: %targetDisplayName"

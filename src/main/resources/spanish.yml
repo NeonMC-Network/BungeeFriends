@@ -1,0 +1,111 @@
+Language: Spanish
+Ingame_Only: "&cEste comando solo está disponible en el juego."
+No_Permission: "&cNo tienes acceso a este comando!"
+Hyphen: "&9&m---------------------------------------------"
+Exceptions:
+  AlreadySent: "&c¡Ya has enviado una solicitud de amistad a esta persona!"
+  AlreadyFriend: "&c¡Ya eres amigo de esta persona!"
+  Ignored: "&c¡Ese jugador te ha agregado a su lista de jugadores ignorados!"
+  IsntOnYourFriends: "&c%targetDisplayName &cno está en tu lista de amigos!"
+  CantAddYourSelf: "&c¡No puedes agregarte como amigo!"
+  CantRemoveYourself: "&c¡No te puedes quitar!"
+  NoInvited: "&cEsa persona no te ha invitado a ser amigos!"
+  HasntFriend: "&cEsa persona no te ha invitado a ser amigos!"
+  SlotLimitReached: "&c¡Has llegado al máximo de amigos! Para agregar más amigos por favor retire algunos!"
+  RequestDeny: "&cThis player has disabled friend request receipt!"
+No-Joined-The-Party: "&c¡Debes estar en una fiesta para usar este comando!"
+Cant-Find: "&cNo puedo encontrar un jugador por el nombre de '%name'"
+Friends:
+  Join: "&7%%displayName%% &eis now &aonline&e."
+  Quit: "&7%%displayName%% &eis now &coffline&e."
+  Server-Move: "&7%%displayName%% &emoved to &a%%server%%&e."
+Add:
+  Usage: "&cUsa: /friend add <player>"
+  Sent: "&eEnviaste una solicitud de amistad a %targetDisplayName&e!"
+  5-Minutes: "&eTienen 5 minutos para aceptarlo!"
+  Accept:
+    Prefix: "&a&l[ACCEPT]&r"
+    Message: "&bHaz clic para aceptar la solicitud de amistad."
+  Deny:
+    Prefix: "&c&l[DENY]&r"
+    Message: "&bHaz clic para negar la solicitud de amistad."
+  Ignore:
+    Prefix: "&7&l[IGNORE]&r"
+    Message: "&bHaz clic para bloquear todas las futuras solicitudes de amistad."
+  Request:
+    Received: "&eSolicitud de amistad de %displayName&e!"
+  Expired:
+    YourSelf: "&eTu solicitud de amistad para %targetDisplayName &eha expirado."
+    Target: "&eLa solicitud de amistad de %displayName &eha expirado."
+Remove:
+  Usage: "&cUsa: /friend remove <player>"
+  YourSelf: "&eHas eliminado %targetDisplayName &ede tu lista de amigos!"
+  Target: "&e%displayName &ete sacó de su lista de amigos!"
+Accept:
+  Usage: "&cUsa: /friend accept <player>"
+  YourSelf: "&aAhora eres amigo de %targetDisplayName."
+  Target: "&aAhora eres amigo de %displayName."
+Deny:
+  Usage: "&cUsa: /friend deny <player>"
+  Declined: "&eDeniega %targetDisplayName &ela solicitud de amistad de."
+List:
+  DontHave:
+    One: "&e¡Aún no tienes amigos!"
+    Two: "&eAgrega algo con /friend add <player>"
+  Online: "&e%targetDisplayName &eestá en el %server servidor."
+  Offline: "&e%targetDisplayName &cestá actualmente fuera de línea."
+  Page: "&6Amigos (Page %%currentPage%% of %%maxPage%%)"
+Lang:
+  Usage: "&cUsa: /friend lang <language>"
+  Available: "&bIdiomas actualmente disponibles:"
+  Update: "&aIdioma seleccionado: &e%lang"
+Ignore:
+  Usage:
+    Main: "&cUsa: /friend ignore <add|remove|list>"
+    Add: "&cUsa: /friend ignore add <player>"
+    Remove: "&cUsa: /friend ignore add <player>"
+  Havent:
+    One: "&e¡Aún no tienes ignorantes!"
+    Two: "&eAgrega algo con /friend ignore add <player>"
+  Added: "&aAgrega %targetDisplayName &aa tu lista de ignorados"
+  AlreadyAdded: "&c¡Ya has ignorado a ese jugador!"
+  Removed: "&aBorra %targetDisplayName &ade su lista de ignorados."
+  NotAdded: "&c¡No estás ignorando a ese jugador!"
+Force-Add:
+  Usage: "&cUsa: /friend force-add <player>"
+  YourSelf: "&aAhora eres amigo de %targetDisplayName &c&l[FORCE]"
+  Target: "&aAhora eres amigo de %displayName &c&l[FORCE]"
+Prefix:
+  Usage: "&cUsa: /friend prefix <player> <prefix>"
+  Current: "&7%targetDisplayName &eactualmente el prefijo es '%prefix&e'"
+  To: "&7%targetDisplayName&e's prefix has been changed to '%prefix&e'"
+Toggle:
+  Enabled: "&eThe friend request receipt is now &aenabled&e."
+  Disabled: "&eThe friend request receipt is now &cdisabled&e."
+ResetPrefix:
+  Usage: "&cUsa: /friend reset-prefix <player>"
+  Default: "defecto"
+  To: "&7%targetDisplayName&e's prefix has been changed to '%prefix&e'"
+Help:
+  Command: "&aComandos de amigos:"
+  Help: "&e/friend help &7- &bAyuda sobre los comandos."
+  Lang: "&e/friend lang &7- &bCambiar el idioma de visualización"
+  Add: "&e/friend add &7- &bAñadir un jugador como amigo"
+  Remove: "&e/friend remove &7- &bElimina un jugador de tus amigos."
+  Accept: "&e/friend accept &7- &bAceptar una solicitud de amistad"
+  Deny: "&e/friend deny &7- &bRechazar una solicitud de amistad"
+  List: "&e/friend list &7- &bLista de amigos"
+  Ignore: "&e/friend ignore &7- &bLista de ignorados."
+  Force-Add: "&e/friend force-add &7- &bSerás obligado a ser amigo del jugador."
+  Prefix: "&e/friend prefix &7- &bEstablecer el prefijo del jugador."
+  Toggle: "&e/friend toggle &7- &bTo toggle the friend request receipt."
+  ResetPrefix: "&e/friend reset-prefix &7- &bTo reset a player's prefix to their NeonMC rank."
+Tell-Command:
+  Usage: "&cUsa: /tell <player> <message>"
+  YourSelf: "&dTo: %targetDisplayName&7: %message"
+  Target: "&dFrom: %displayName&7: %message"
+  MustBeFriends: "&cDebes ser amigo de %targetDisplayName!"
+  Offline: "&c%targetDisplayName &cno está en línea!"
+Reply-Command:
+  Usage: "&cUsa: /reply <message>"
+  Target: "&cRespuesta: %targetDisplayName"
